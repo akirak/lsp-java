@@ -25,7 +25,8 @@
 
 ;;; Code:
 (require 'cc-mode)
-(require 'lsp-mode)
+(eval-and-compile
+  (require 'lsp-mode))
 (require 'markdown-mode)
 (require 'lsp-treemacs)
 (require 'dash)

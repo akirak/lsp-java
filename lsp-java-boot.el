@@ -26,7 +26,8 @@
 
 (require 'dash)
 (require 'cl-lib)
-(require 'lsp-mode)
+(eval-and-compile
+  (require 'lsp-mode))
 (require 'lsp-java)
 
 (defcustom lsp-java-boot-enabled t
